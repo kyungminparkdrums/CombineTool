@@ -3,7 +3,8 @@
 [Resources on preparing the datacard (from the official Combine Tool website)](http://cms-analysis.github.io/HiggsAnalysis-CombinedLimit/part2/settinguptheanalysis.html)
 
 **Step 1. Get .txt files for histogram bin contents for each processes**
-```
+```python
+{ % highlight python linenos % }
 // This is an input config file for `getBkgYield.py`
 // Fill out the sections [1] and [2] below in this config file
 // To comment out any line(s), use // at the beginning of the line(s)
@@ -42,6 +43,7 @@ NRecoBJet
 # Binning of the histogram from the left end to the right end values: histogram will be rebinned with this binning
 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600, 2800, 3000, 3200, 3400, 3600, 3800, 4000, 4500, 5000
 
+{ % endhighlight % }
 ```
 
 ```
