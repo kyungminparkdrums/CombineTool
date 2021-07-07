@@ -5,11 +5,11 @@
 **Step 1. Edit `./config/histo.config` as necessary**
 
 From the sample `histo.config` file in the code block below, change the following:
-- Under *# Input file directory*: directory where the root files are stored.
-- Under *# Name of the input root files in the directory above*: name of the root files, i.e. ZJetsToNuNu.root, under *## SIGNAL sample(s)*, *## BKG sample(s)*, and/or *## DATA*, for signal, background, and data samples, respectively. 
-- Under *# Name of the histogram stored in the root files*: i.e. LargestDiJetMass
-- Under *# Name of the cut step after which you want the histogram from*: i.e. NRecoBJet
-- Under *# Binning of the histogram from the left end to the right end values: histogram will be rebinned with this binning*: i.e. 1000, 1500, 2000, 2500, 3000, 3500, 4000 
+- Under **# Input file directory**: directory where the root files are stored.
+- Under **# Name of the input root files in the directory above**: name of the root files, i.e. ZJetsToNuNu.root, under **## SIGNAL sample(s)**, **## BKG sample(s)**, and/or **## DATA**, for signal, background, and data samples, respectively. 
+- Under **# Name of the histogram stored in the root files**: i.e. LargestDiJetMass
+- Under **# Name of the cut step after which you want the histogram from**: i.e. NRecoBJet
+- Under **# Binning of the histogram from the left end to the right end values: histogram will be rebinned with this binning**: i.e. 1000, 1500, 2000, 2500, 3000, 3500, 4000 
 
 ```
 // This is an input config file for `getBkgYield.py`
