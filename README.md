@@ -5,11 +5,11 @@
 **Step 1. Edit `./config/histo.config` as necessary**
 
 From the sample `./config/histo.config` file shown in the code block below, change the following:
-- Under **# Input file directory**: directory where the root files are stored.
-- Under **# Name of the input root files in the directory above**: name of the root files, i.e. ZJetsToNuNu.root, under **## SIGNAL sample(s)**, **## BKG sample(s)**, and/or **## DATA**, for signal, background, and data samples, respectively. 
-- Under **# Name of the histogram stored in the root files**: i.e. LargestDiJetMass
-- Under **# Name of the cut step after which you want the histogram from**: i.e. NRecoBJet
-- Under **# Binning of the histogram from the left end to the right end values: histogram will be rebinned with this binning**: i.e. 1000, 1500, 2000, 2500, 3000, 3500, 4000 
+- Under `# Input file directory`: directory where the root files are stored.
+- Under `# Name of the input root files in the directory above`: name of the root files, i.e. ZJetsToNuNu.root, under `## SIGNAL sample(s)`, `## BKG sample(s)`, and/or `## DATA`, for signal, background, and data samples, respectively. 
+- Under `# Name of the histogram stored in the root files`: i.e. LargestDiJetMass
+- Under `# Name of the cut step after which you want the histogram from`: i.e. NRecoBJet
+- Under `# Binning of the histogram from the left end to the right end values: histogram will be rebinned with this binning`: i.e. 1000, 1500, 2000, 2500, 3000, 3500, 4000 
 
 To comment any line(s) out, use // at the beginning of the line(s)
 ```
@@ -68,10 +68,10 @@ ex) python getBkgYield.py ./config/histo.config
 **Step 3. Edit `./config/card.config` as necessary**
 
 Open `./config/card.config` created from **Step 2** and edit the following:
-- Under **# Name of the output datacard**: name of the output datacard, i.e. VBF_Higgsino_M100_dM10. Datacards will be stored for each bin information, so the final naming will be [your output datacard name]\_bin[bin number N].txt for the Nth bin.
-- Under **# Directory where the output datacards for each bins will be stored**: i.e. ./cards/
+- Under `# Name of the output datacard`: name of the output datacard, i.e. VBF_Higgsino_M100_dM10. Datacards will be stored for each bin information, so the final naming will be [your output datacard name]\_bin[bin number N].txt for the Nth bin.
+- Under `# Directory where the output datacards for each bins will be stored`: i.e. ./cards/
 
-Add systematics under **## <-- Below is your uncertainty input (add as necessary) -->** as necessary. In this section, `Process [your first input signal process] ... [your last input signal process] [your first input bkg process] ... [your last input bkg process]` will be written. Under this line, add systematic uncertainties from each sources, for each processes. 
+Add systematics under `## <-- Below is your uncertainty input (add as necessary) -->` as necessary. In this section, `Process [your first input signal process] ... [your last input signal process] [your first input bkg process] ... [your last input bkg process]` will be written. Under this line, add systematic uncertainties from each sources, for each processes. 
 For each systematic source, add `label` (i.e. JER), `distr` (lnN: log-normal, gmN: gamma, lnU: log-uniform), and `values`.
 
 Check out the example config in the code block below, including the systematics.
