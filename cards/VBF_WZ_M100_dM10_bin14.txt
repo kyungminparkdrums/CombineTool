@@ -1,0 +1,14 @@
+# VBF SUSY temp
+imax 1 number of channels
+jmax 12 number of bkg sources
+kmax * number of nuisance parameters (sources of systematic uncertainties)
+------------
+# we have just one channel for now
+bin channel
+observation 0 
+------------
+bin channel channel channel channel channel channel channel channel channel channel channel channel channel 
+process VBF-EWKino_WZ_M100_dM10 ZJetsToNuNu WJetsToLNu EWK_Z EWK_W VV EWK_VV SingleTop tbar{t} QCD tbar{t}+X Vgamma VVV 
+process 0 1 2 3 4 5 6 7 8 9 10 11 12 
+rate 5.1599662718   12.2356604591  10.2263274532  8.6538762812   10.3740976674  0.4869933955   0.2198101186   1.0498073887   2.1928876897   25.3710904227  0.0113426127   1.9135942218   0.0749453532   
+------------
