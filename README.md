@@ -25,9 +25,10 @@ python combineCards.py [/path to cards created from Step 2/*] > [output card nam
 ex) python combineCards.py ./cards/* > $CMSSW_BASE/src/CombineTool/VBF_card.txt
 ```
 
-## Run Higgs Combine Tool
-**Calculate Significance**
-1. Run with toy model data: In `$CMSSW_BASE/src/HiggsAnalysis/CombinedLimit/`, run the command below
+## Run Higgs Combine Tool: Calculate Significance
+**Run with toy model data**
+
+In `$CMSSW_BASE/src/HiggsAnalysis/CombinedLimit/`, run the command below
 ```
 combine -M Significance [datacard from above] -t -1 --expectSignal=1
 
