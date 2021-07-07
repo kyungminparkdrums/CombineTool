@@ -16,9 +16,9 @@ python createCard.py [card config file]
 ex) python createCard.py ./config/card.config
 ```
 
-**Step 2. Combine the datacards (for each histogram bins) from Step 2 as one datacard**
+**Step 3. Combine the datacards (for each histogram bins) from Step 2 as one datacard**
 
-In `$CMSSW_BASE/src/HiggsAnalysis/CombinedLimit/scripts`, run the command below to get a datacard that combines all datacards from Step 3.
+In `$CMSSW_BASE/src/HiggsAnalysis/CombinedLimit/scripts`, run the command below to get a datacard that combines all datacards from Step 2.
 ```
 python combineCards.py [/path to cards created from Step 2/*] > [output card name]
 
